@@ -13,7 +13,7 @@
             background-color: black;
         }
         body{
-            background-color: red;
+            background-color: black;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,6 +25,18 @@
             max-width: 750px;
             min-height: 75px;
             background-color: white;
+            display: grid;
+            grid-template-columns:1fr 1fr;
+        }
+        .container .left{
+            position: relative;
+            background-color: rgb(9, 9, 83);
+            padding: 40px;
+        }
+        .container .right{
+            position: relative;
+            background-color: rgb(9, 77, 167);
+            padding: 40px;
         }
         
     </style>
@@ -33,7 +45,7 @@
 </head>
 <body>
         <div class="container">
-            <div class="left"></div>
+            <div class="left"></div>   
             <div class="right"></div>
         </div>
 </body>
