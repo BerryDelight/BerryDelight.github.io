@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing : border-box;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
+            
         }
         body{
             background-color: black;
@@ -22,31 +22,199 @@
         .container{
             position: relative;
             width: 100%;
-            max-width: 750px;
-            min-height: 75px;
+            max-width: 2000px;
+            min-height: 1500px;
+            margin: 50px;
             background-color: white;
             display: grid;
-            grid-template-columns:1fr 1fr;
+            grid-template-columns:1fr 2fr;
         }
         .container .left{
             position: relative;
-            background-color: rgb(9, 9, 83);
+            background-color: #0C0032;
             padding: 40px;
+            border: 1px solid white;
         }
         .container .right{
             position: relative;
-            background-color: rgb(9, 77, 167);
+            background-color: #190061;
             padding: 40px;
         }
+        .myprofile{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 15px;
+            
+            border-bottom: 1px solid grey;
+        }
+        .myprofile h2{
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+        }
+        .myimage img{
+            padding-top: 10px;
+            width:200px;
+            height:200px;
+            border-radius: 70%;
+            
+        
+        }
+        .contactinfo img, .myskill img{
+            height: 25px;
+            width: 25px;
+        }
+        .contactinfo, .schoolinfo, .intro, .skill{
+            list-style-type: none; 
+         
+        }
+        .mycontact{
+            background-color: #240090;
+            border: 3px solid #3500D3;
+        }
+        .mycontact .title{
+            color: white;
+            padding-left: 5px;
+        }
+        .contactinfo li {
+            border-bottom: 1px solid grey;
+            padding-left: 5px;
+        }
+        .contactinfo li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav span{
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(18, 23, 61);
+        }
+        header {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(4, 4, 92);
+        }
+        .myeducation, .myintro, .myskill{
+            margin-top: 50px;
+            background-color: #240090;
+            color: white;
+            padding: 1px 0px 1px 5px;
+            border: 3px solid #3500D3;
+        }
+        .footer{
+            margin-top: 125px;
+            color: white;
+            text-align: center;
+            background-color:#190061;
+        }
+        
         
     </style>
-    <title>Document</title>
+    <title>My CV's</title>
     
 </head>
 <body>
         <div class="container">
-            <div class="left"></div>   
-            <div class="right"></div>
+            <div class="left">
+                <div class="myprofile">
+                    <div class="myimage">
+                        <img src="download.png">
+                    </div>
+                    <h2>Michael Schumacher</h2><br>
+                </div>
+                <div class="mycontact">
+                    <h3 class="title">Contact me</h3>
+                    <ul class="contactinfo">
+                        <li>
+                            <img src="1218297_whatsapp_icon.png" alt="">
+                            <a href="https://wa.me/6285609855208">Whatsapp </a>
+                        </li>
+                        <li>
+                            <img src="1218273_gmail_icon.png" alt="">
+                            <a href="google.com">Gmail</a>
+                        </li>
+                        <li>
+                            <img src="1218272_fb_icon.png" alt="">
+                            <a href="google.com">Fb</a>
+                        </li>
+                        <li>
+                            <img src="C:\11_kom\ExCode\1218275_github_icon.png" alt="">
+                            <a href="https://github.com/BerryDelight">Github</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="myeducation">
+                    <h3 class="title">Education Background</h3>
+                    <ul class="schoolinfo">
+                        <br>
+                        <li>
+                            <h5>2012-1018</h5>
+                            <h5>Elementary School</h5>
+                            <h4>My Elementary School</h4>
+                        </li>
+                        <br>
+                        <li>
+                            <h5>2018-2021</h5>
+                            <h5>Junior High School</h5>
+                            <h4>My Junior High School</h4>
+                        </li>
+                        <br>
+                        <li>
+                            <h5>2021-Now</h5>
+                            <h5>Senior High School</h5>
+                            <h5>Ignatius Global School</h5>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="myintro">
+                    <h3 class="title">Introduction About Myself</h3>
+                    <ul class="intro">
+                        <li>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum id quos quas
+                                molestias voluptates eaque ad soluta quia dolorem labore eius illo quam, obcaecati officia, 
+                                nihil rem sunt similique ipsa.</h4>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="myskill">
+                    <h3 class="title">My Skill</h3>
+                    <ul class="skill">
+                        <li>
+                            <img src="2361501_flag_japan_icon.png" alt="">
+                            <h4>Japanese</h4>
+                            <h5>I'm learning japanese an already have a certificate of N5 which is the lowest grade</h5>
+                        </li>
+                        <li>
+                            <img src="290121_computer_desktop_monitor_computer screen_icon.png" alt="">
+                            <h4>Computer</h4>
+                            <h5>I'm learning computer code quiet early in my country and this website will show my progress </h5>
+                        </li>
+                        <li>
+                            <img src="6518772_household_housework_laundry_machine_washing_icon.png" alt="">
+                            <h4>Basic skill in daily life</h4>
+                            <h5>This is often be overlooked by numerous person, but such ability could help in college life later especially if you're alone</h5>
+                        </li>
+                        <li>
+                            <img src="8679043_english_input_icon.png" alt="">
+                            <h4>IELTS</h4>
+                            <h5>I'm planning to take an IELTS test in october of 2023, and base of my skill and training I'm confident that i could achive the grade of minimal 7.0</h5>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="footer">Copyright© 2023 All right Deserved </footer>
+            </div>   
+            <div class="right">
+                <header>
+                    <h1>My Project</h1>
+                </header>
+            </div>
         </div>
 </body>
 </html>
